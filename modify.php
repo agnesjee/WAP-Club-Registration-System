@@ -86,7 +86,7 @@ $stuNum = $row['Stu_Num'];
 </head>
 <body>
 
-  <!--Form to add a new student-->
+  <!--Form to modify a student data-->
   <div class="container">
       <h1 class="textGreen" style="margin-top: 0px;"><b>Edit a Student's Information</b></h1>
       <hr style="width:50px;border:5px solid #54C571" class="round">
