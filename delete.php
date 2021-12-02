@@ -38,7 +38,7 @@ if ( $row === false ) {
 </head>
 <body>
 
-  <!--Form to add a new student-->
+  <!--Form to delete a student data-->
   <div class="container">
       <h1 class="textGreen" style="margin-top: 0px;"><b>Delete Student</b></h1>
       <hr style="width:50px;border:5px solid #54C571" class="round">
