@@ -1,0 +1,88 @@
+  body {
+    font-family: Georgia, sans-serif;
+  }
+
+  /*Table CSS*/
+
+  table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 15px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
+
+  tr:hover {
+    background-color: #dddddd;
+  }
+
+  a {
+    color: #54C571;
+    font-weight: bold;
+    padding: 12px 20px;
+    float: center;
+  }
+
+  a:hover {
+    color: #242020;
+    cursor: pointer;
+  }
+
+  /* Form CSS */
+
+  body {
+    font-family: Georgia, sans-serif;
+  }
+  hr {
+    border:0;
+    border-top:1px solid #eee;
+    margin:20px 0;
+  }
+  .round {
+    border-radius: 4px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 300px;
+    margin-right: 350px;
+  }
+  .section {
+    margin-top:16px;
+    margin-bottom:16px;
+  }
+  .textGreen {
+    color: #54C571;
+  }
+  .formInput {
+    padding:8px;
+    margin-top: 10px;
+    display:block;
+    border:1px solid #ccc;
+    width:95%;
+  }
+  .formBtn {
+    font-size: 15px;
+    width: 20%;
+    border:none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding:8px 16px;
+    color:#FFFFFF;
+    background-color:#54C571;
+    text-align:center;
+  }
+  .formBtn:hover {
+    color:#000;
+    background-color:#ccc;
+    cursor: pointer;
+  }
