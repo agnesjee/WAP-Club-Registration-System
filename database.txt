@@ -1,0 +1,48 @@
+CREATE DATABASE clubregistration;
+GRANT ALL ON clubregistration.* TO 'chew'@'localhost' IDENTIFIED BY 'zap';
+GRANT ALL ON clubregistration.* TO 'chew'@'127.0.0.1' IDENTIFIED BY 'zap';
+
+==============================================================================
+
+CREATE TABLE clubs (
+Clubs_Num INTEGER NOT NULL AUTO_INCREMENT,
+Clubs_Name VARCHAR(30),
+Clubs_Obj VARCHAR(100),
+Clubs_Regdate date,
+PRIMARY KEY (Clubs_Num)
+) ENGINE=InnoDB CHARSET=utf8;
+
+==============================================================================
+
+CREATE TABLE student (
+Stu_Num INTEGER NOT NULL AUTO_INCREMENT,
+Stu_Name varchar(30) ,
+Stu_Class varchar(10) ,
+Stu_Tel varchar(20) ,
+Stu_Email varchar(30) ,
+Clubs_Num INTEGER,
+PRIMARY KEY (Stu_Num),
+CONSTRAINT FOREIGN KEY (Clubs_Num) REFERENCES clubs (Clubs_Num)
+) ENGINE=InnoDB CHARSET=utf8;
+
+==============================================================================
+
+insert into clubs values
+(DEFAULT,'Basketball','Teach Basketball','2010-02-22'),
+(DEFAULT,'Tennis','Teaching Tennis','2011-01-04'),
+(DEFAULT,'Fencing','Art of Fencing','2009-03-21'),
+(DEFAULT,'Swimming','Teach Swimmming skils','2008-05-10'),
+(DEFAULT,'Archery','Play with arrows','2005-01-23');
+
+===============================================================================
+
+insert into student values
+(DEFAULT,'Jack Ong','4 Amanah','012-1113333','jong@gmail.com',1),
+(DEFAULT,'Janice Wee','2 Bestari','012-123422','jwee@gmail.com',1),
+(DEFAULT,'Muhammad Amin','5 Cerdik','016-
+3421231','Mamin@hotmail.com',2),
+(DEFAULT,'Laavanya','2 Amanah','010-1157865','lanya@yahoo.com',3),
+(DEFAULT,'Angelina Mock','5 Delima','013-
+5468976','huiyin@hotmail.com',4);
+
+===============================================================================
